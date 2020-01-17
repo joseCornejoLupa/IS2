@@ -1,0 +1,9 @@
+C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\bin\Debug\SistemaRestaurant.exe.config
+C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\bin\Debug\SistemaRestaurant.exe
+C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\bin\Debug\SistemaRestaurant.pdb
+C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.csprojAssemblyReference.cache
+C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.Form1.resources
+C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.Properties.Resources.resources
+C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.csproj.GenerateResource.cache
+C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.exe
+C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.pdb
