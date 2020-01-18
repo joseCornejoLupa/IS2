@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -65,16 +65,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(347, 235);
             this.panel3.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(107, 162);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 42);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -129,6 +119,16 @@
             this.panel2.Size = new System.Drawing.Size(347, 204);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button1.Location = new System.Drawing.Point(107, 162);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(133, 42);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Ingresar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // login
             // 
