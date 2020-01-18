@@ -1,6 +1,6 @@
 ﻿namespace SistemaRestaurant
 {
-    partial class nosirve
+    partial class login
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // nosirve
+            // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.ControlBox = false;
-            this.Name = "nosirve";
-            this.Text = "login";
-            this.Load += new System.EventHandler(this.login_Load);
+            this.Name = "login";
+            this.Text = "Restaurante El Salmon";
+            this.Load += new System.EventHandler(this.loggin_Load);
             this.ResumeLayout(false);
 
         }
