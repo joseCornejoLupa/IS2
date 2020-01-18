@@ -7,9 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;  //BASE DE DATOS ///
-
-//1.5.4 -> creacion de form menuReserva  LUPA
 
 namespace SistemaRestaurant
 {
@@ -21,26 +18,6 @@ namespace SistemaRestaurant
         }
 
         private void menuReserva_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void añadirReservaButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void modificarReservaButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void eliminarReservaButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cerrarSesionButton_Click(object sender, EventArgs e)
         {
 
         }

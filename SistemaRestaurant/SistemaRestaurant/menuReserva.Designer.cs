@@ -28,88 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.cerrarSesionButton = new System.Windows.Forms.Button();
-            this.gestionarReservasButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.nombreUsuario = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.cerrarSesionButton);
-            this.panel1.Controls.Add(this.gestionarReservasButton);
-            this.panel1.Location = new System.Drawing.Point(0, 63);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 540);
-            this.panel1.TabIndex = 0;
-            // 
-            // cerrarSesionButton
-            // 
-            this.cerrarSesionButton.Location = new System.Drawing.Point(0, 477);
-            this.cerrarSesionButton.Name = "cerrarSesionButton";
-            this.cerrarSesionButton.Size = new System.Drawing.Size(230, 61);
-            this.cerrarSesionButton.TabIndex = 5;
-            this.cerrarSesionButton.Text = "Cerrar sesión";
-            this.cerrarSesionButton.UseVisualStyleBackColor = true;
-            this.cerrarSesionButton.Click += new System.EventHandler(this.cerrarSesionButton_Click);
-            // 
-            // gestionarReservasButton
-            // 
-            this.gestionarReservasButton.Location = new System.Drawing.Point(0, 0);
-            this.gestionarReservasButton.Name = "gestionarReservasButton";
-            this.gestionarReservasButton.Size = new System.Drawing.Size(230, 61);
-            this.gestionarReservasButton.TabIndex = 3;
-            this.gestionarReservasButton.Text = "Gestionar reservas";
-            this.gestionarReservasButton.UseVisualStyleBackColor = true;
-            this.gestionarReservasButton.Click += new System.EventHandler(this.añadirReservaButton_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 54.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(448, 122);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 83);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bienvenido";
-            // 
-            // nombreUsuario
-            // 
-            this.nombreUsuario.AutoSize = true;
-            this.nombreUsuario.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nombreUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreUsuario.Location = new System.Drawing.Point(506, 205);
-            this.nombreUsuario.Name = "nombreUsuario";
-            this.nombreUsuario.Size = new System.Drawing.Size(240, 38);
-            this.nombreUsuario.TabIndex = 2;
-            this.nombreUsuario.Text = "nombreUsuario";
             // 
             // menuReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.nombreUsuario);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "menuReserva";
-            this.Text = "Menu Reserva";
+            this.Text = "menuReserva";
             this.Load += new System.EventHandler(this.menuReserva_Load);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button gestionarReservasButton;
-        private System.Windows.Forms.Button cerrarSesionButton;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label nombreUsuario;
     }
 }

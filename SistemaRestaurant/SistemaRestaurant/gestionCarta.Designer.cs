@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Comida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Modificar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Ver = new System.Windows.Forms.DataGridViewButtonColumn();
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -38,10 +42,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialFlatButton3 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.Comida = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Modificar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Ver = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.materialFlatButton4 = new MaterialSkin.Controls.MaterialFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +58,35 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(594, 536);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // Comida
+            // 
+            this.Comida.HeaderText = "Comida";
+            this.Comida.Name = "Comida";
+            this.Comida.ToolTipText = "Modificar";
+            this.Comida.Width = 250;
+            // 
+            // Modificar
+            // 
+            this.Modificar.HeaderText = "Modificar";
+            this.Modificar.Name = "Modificar";
+            this.Modificar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Modificar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Modificar.Text = "Modificar";
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Ver
+            // 
+            this.Ver.HeaderText = "Ver";
+            this.Ver.Name = "Ver";
+            this.Ver.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Ver.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // materialFlatButton1
             // 
@@ -168,40 +198,27 @@
             this.materialFlatButton3.UseVisualStyleBackColor = true;
             this.materialFlatButton3.Click += new System.EventHandler(this.materialFlatButton3_Click);
             // 
-            // Comida
+            // materialFlatButton4
             // 
-            this.Comida.HeaderText = "Comida";
-            this.Comida.Name = "Comida";
-            this.Comida.ToolTipText = "Modificar";
-            this.Comida.Width = 250;
-            // 
-            // Modificar
-            // 
-            this.Modificar.HeaderText = "Modificar";
-            this.Modificar.Name = "Modificar";
-            this.Modificar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Modificar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Modificar.Text = "Modificar";
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Ver
-            // 
-            this.Ver.HeaderText = "Ver";
-            this.Ver.Name = "Ver";
-            this.Ver.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Ver.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.materialFlatButton4.AutoSize = true;
+            this.materialFlatButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialFlatButton4.Depth = 0;
+            this.materialFlatButton4.Location = new System.Drawing.Point(904, 549);
+            this.materialFlatButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialFlatButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialFlatButton4.Name = "materialFlatButton4";
+            this.materialFlatButton4.Primary = false;
+            this.materialFlatButton4.Size = new System.Drawing.Size(80, 36);
+            this.materialFlatButton4.TabIndex = 10;
+            this.materialFlatButton4.Text = "Regresar";
+            this.materialFlatButton4.UseVisualStyleBackColor = true;
             // 
             // gestionCarta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.materialFlatButton4);
             this.Controls.Add(this.materialFlatButton3);
             this.Controls.Add(this.materialFlatButton2);
             this.Controls.Add(this.textBox3);
@@ -237,5 +254,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn Modificar;
         private System.Windows.Forms.DataGridViewButtonColumn Eliminar;
         private System.Windows.Forms.DataGridViewButtonColumn Ver;
+        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton4;
     }
 }
