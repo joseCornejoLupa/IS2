@@ -7,3 +7,4 @@ C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\Sistem
 C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.csproj.GenerateResource.cache
 C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.exe
 C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.pdb
+C:\Users\José Eduardo\Desktop\Proyecto Restaurante\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.login.resources
