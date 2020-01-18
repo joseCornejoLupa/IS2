@@ -23,5 +23,10 @@ namespace SistemaRestaurant
             this.boletaTableAdapter.Fill(this.restauranteDataSet1.boleta);
 
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
