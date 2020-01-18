@@ -30,10 +30,12 @@
         {
             this.materialContextMenuStrip1 = new MaterialSkin.Controls.MaterialContextMenuStrip();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.emitirBoleta = new System.Windows.Forms.Button();
-            this.v = new System.Windows.Forms.Button();
-            this.comprarSuministro = new System.Windows.Forms.Button();
             this.visualizarVentas = new System.Windows.Forms.Button();
+            this.comprarSuministro = new System.Windows.Forms.Button();
+            this.v = new System.Windows.Forms.Button();
+            this.emitirBoleta = new System.Windows.Forms.Button();
+            this.cerrarSesion = new System.Windows.Forms.Button();
+            this.labelbienvenido = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +50,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.visualizarVentas);
+            this.panel1.Controls.Add(this.cerrarSesion);
             this.panel1.Controls.Add(this.comprarSuministro);
             this.panel1.Controls.Add(this.v);
             this.panel1.Controls.Add(this.emitirBoleta);
@@ -55,33 +58,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 540);
             this.panel1.TabIndex = 1;
-            // 
-            // emitirBoleta
-            // 
-            this.emitirBoleta.Location = new System.Drawing.Point(0, 0);
-            this.emitirBoleta.Name = "emitirBoleta";
-            this.emitirBoleta.Size = new System.Drawing.Size(230, 61);
-            this.emitirBoleta.TabIndex = 2;
-            this.emitirBoleta.Text = "Emitir Boleta";
-            this.emitirBoleta.UseVisualStyleBackColor = true;
-            // 
-            // v
-            // 
-            this.v.Location = new System.Drawing.Point(0, 58);
-            this.v.Name = "v";
-            this.v.Size = new System.Drawing.Size(230, 61);
-            this.v.TabIndex = 3;
-            this.v.Text = "Cobrar Boleta";
-            this.v.UseVisualStyleBackColor = true;
-            // 
-            // comprarSuministro
-            // 
-            this.comprarSuministro.Location = new System.Drawing.Point(0, 115);
-            this.comprarSuministro.Name = "comprarSuministro";
-            this.comprarSuministro.Size = new System.Drawing.Size(230, 61);
-            this.comprarSuministro.TabIndex = 4;
-            this.comprarSuministro.Text = "Cobrar Suministros";
-            this.comprarSuministro.UseVisualStyleBackColor = true;
             // 
             // visualizarVentas
             // 
@@ -92,17 +68,65 @@
             this.visualizarVentas.Text = "Visualizar Ventas";
             this.visualizarVentas.UseVisualStyleBackColor = true;
             // 
+            // comprarSuministro
+            // 
+            this.comprarSuministro.Location = new System.Drawing.Point(0, 115);
+            this.comprarSuministro.Name = "comprarSuministro";
+            this.comprarSuministro.Size = new System.Drawing.Size(230, 61);
+            this.comprarSuministro.TabIndex = 4;
+            this.comprarSuministro.Text = "Cobrar Suministros";
+            this.comprarSuministro.UseVisualStyleBackColor = true;
+            // 
+            // v
+            // 
+            this.v.Location = new System.Drawing.Point(0, 58);
+            this.v.Name = "v";
+            this.v.Size = new System.Drawing.Size(230, 61);
+            this.v.TabIndex = 3;
+            this.v.Text = "Cobrar Boleta";
+            this.v.UseVisualStyleBackColor = true;
+            // 
+            // emitirBoleta
+            // 
+            this.emitirBoleta.Location = new System.Drawing.Point(0, 0);
+            this.emitirBoleta.Name = "emitirBoleta";
+            this.emitirBoleta.Size = new System.Drawing.Size(230, 61);
+            this.emitirBoleta.TabIndex = 2;
+            this.emitirBoleta.Text = "Emitir Boleta";
+            this.emitirBoleta.UseVisualStyleBackColor = true;
+            // 
+            // cerrarSesion
+            // 
+            this.cerrarSesion.Location = new System.Drawing.Point(0, 463);
+            this.cerrarSesion.Name = "cerrarSesion";
+            this.cerrarSesion.Size = new System.Drawing.Size(230, 61);
+            this.cerrarSesion.TabIndex = 6;
+            this.cerrarSesion.Text = "Cerrar Sesión";
+            this.cerrarSesion.UseVisualStyleBackColor = true;
+            // 
+            // labelbienvenido
+            // 
+            this.labelbienvenido.AutoSize = true;
+            this.labelbienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 55F);
+            this.labelbienvenido.Location = new System.Drawing.Point(254, 79);
+            this.labelbienvenido.Name = "labelbienvenido";
+            this.labelbienvenido.Size = new System.Drawing.Size(706, 170);
+            this.labelbienvenido.TabIndex = 7;
+            this.labelbienvenido.Text = "Bienvenido al menú \r\nde caja!";
+            // 
             // menuCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.labelbienvenido);
             this.Controls.Add(this.panel1);
             this.Name = "menuCaja";
             this.Text = "Menu Caja";
             this.Load += new System.EventHandler(this.menuCaja_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -114,5 +138,7 @@
         private System.Windows.Forms.Button v;
         private System.Windows.Forms.Button emitirBoleta;
         private System.Windows.Forms.Button visualizarVentas;
+        private System.Windows.Forms.Button cerrarSesion;
+        private System.Windows.Forms.Label labelbienvenido;
     }
 }
