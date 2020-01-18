@@ -49,7 +49,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="comprarSuministros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comprarSuministros.Designer.cs">
+      <DependentUpon>comprarSuministros.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataBase.cs" />
+    <Compile Include="finalizarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finalizarPedido.Designer.cs">
+      <DependentUpon>finalizarPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +76,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tomarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tomarPedido.Designer.cs">
+      <DependentUpon>tomarPedido.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="comprarSuministros.resx">
+      <DependentUpon>comprarSuministros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finalizarPedido.resx">
+      <DependentUpon>finalizarPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +103,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="tomarPedido.resx">
+      <DependentUpon>tomarPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
