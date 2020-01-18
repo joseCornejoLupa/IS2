@@ -20,7 +20,7 @@ using System.Data.SqlClient; //BASE DE DATOS
 
 namespace SistemaRestaurant
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialSkin.Controls.MaterialForm
     {
         public Form1()
         {
@@ -43,6 +43,11 @@ namespace SistemaRestaurant
                 Output = Output + dataReader.GetValue(1) + "\n";
             }
             MessageBox.Show(Output);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
         // -------------------
     }

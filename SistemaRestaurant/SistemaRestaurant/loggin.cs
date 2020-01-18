@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace SistemaRestaurant
 {
-    public partial class nosirve : MaterialSkin.Controls.MaterialForm
+    public partial class login : MaterialSkin.Controls.MaterialForm
     {
-        public nosirve()
+        public login()
         {
             InitializeComponent();
         }
 
-        private void login_Load(object sender, EventArgs e)
+        private void loggin_Load(object sender, EventArgs e)
         {
-
+           
         }
     }
 }

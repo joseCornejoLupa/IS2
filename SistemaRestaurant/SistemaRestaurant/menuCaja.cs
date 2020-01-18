@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace SistemaRestaurant
 {
-    public partial class nosirve : MaterialSkin.Controls.MaterialForm
+    public partial class menuCaja : MaterialSkin.Controls.MaterialForm
     {
-        public nosirve()
+        public menuCaja()
         {
             InitializeComponent();
         }
 
-        private void login_Load(object sender, EventArgs e)
+        private void menuCaja_Load(object sender, EventArgs e)
         {
 
         }
