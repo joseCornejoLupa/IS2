@@ -14,3 +14,20 @@ D:\Computer Science\Software 2\CheckingOut\IS2\SistemaRestaurant\SistemaRestaura
 D:\Computer Science\Software 2\CheckingOut\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.csproj.CopyComplete
 D:\Computer Science\Software 2\CheckingOut\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.exe
 D:\Computer Science\Software 2\CheckingOut\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.pdb
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\bin\Debug\SistemaRestaurant.exe.config
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\bin\Debug\SistemaRestaurant.exe
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\bin\Debug\SistemaRestaurant.pdb
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\bin\Debug\MaterialSkin.dll
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.csprojAssemblyReference.cache
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.comprarSuministros.resources
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.finalizarPedido.resources
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.Form1.resources
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.login.resources
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.nosirve.resources
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.menuCaja.resources
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.Properties.Resources.resources
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.tomarPedido.resources
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.csproj.GenerateResource.cache
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.csproj.CopyComplete
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.exe
+C:\Users\Jose\Documents\UCSP\2019-R\IS2\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.pdb
