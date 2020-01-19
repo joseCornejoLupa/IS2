@@ -110,6 +110,12 @@
     <Compile Include="menuCaja.Designer.cs">
       <DependentUpon>menuCaja.cs</DependentUpon>
     </Compile>
+    <Compile Include="menuChef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuChef.Designer.cs">
+      <DependentUpon>menuChef.cs</DependentUpon>
+    </Compile>
     <Compile Include="menuChefBartender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="menuCaja.resx">
       <DependentUpon>menuCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuChef.resx">
+      <DependentUpon>menuChef.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuChefBartender.resx">
       <DependentUpon>menuChefBartender.cs</DependentUpon>
