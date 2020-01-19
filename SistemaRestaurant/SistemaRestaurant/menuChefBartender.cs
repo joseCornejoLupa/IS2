@@ -19,7 +19,7 @@ namespace SistemaRestaurant
 
         private void menuChefBartender_Load(object sender, EventArgs e)
         {
-
+            label2.Text = BD.nombreUser;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,12 +34,22 @@ namespace SistemaRestaurant
 
         private void emitirBoleta_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            gestionCarta gC = new gestionCarta();
+            gC.Show();
         }
 
         private void visualizarVentas_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BD.nombreUser = "";
+            this.Hide();
+            login ll = new login();
+            ll.Show();
         }
     }
 }

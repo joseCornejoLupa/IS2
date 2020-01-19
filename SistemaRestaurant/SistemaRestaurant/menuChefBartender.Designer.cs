@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.visualizarVentas = new System.Windows.Forms.Button();
             this.emitirBoleta = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +48,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 540);
             this.panel1.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(0, 118);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(230, 61);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Gestionar Pedidos";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 476);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(230, 61);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Cerrar Sesión";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // visualizarVentas
             // 
@@ -92,24 +111,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Usuario";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 476);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 61);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Cerrar Sesión";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(0, 118);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(230, 61);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Gestionar Pedidos";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // menuChefBartender
             // 

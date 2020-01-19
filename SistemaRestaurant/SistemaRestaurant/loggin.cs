@@ -71,7 +71,7 @@ namespace SistemaRestaurant
             SqlCommand command;
             String sql, Output = "";
             SqlDataReader dataReader;
-            sql = "select tipo from empleado where usuario = 'chef' AND password = 'chef';";
+            sql = "select tipo,nombre from empleado where usuario = '" + textBox1.Text + "' AND password = '" + textBox2.Text + "';";
             command = new SqlCommand(sql, BD.cnn);
             dataReader = command.ExecuteReader();
             dataReader.Read();
@@ -82,6 +82,7 @@ namespace SistemaRestaurant
                 {
                     this.Hide();
                     menuChefBartender mCB = new menuChefBartender();
+                    BD.nombreUser = dataReader.GetValue(1).ToString();
                     mCB.Show();
 
                 }
@@ -89,18 +90,22 @@ namespace SistemaRestaurant
                 {
                     this.Hide();
                     menuChef mCB = new menuChef();
+                    BD.nombreUser = dataReader.GetValue(1).ToString();
                     mCB.Show();
+                    
                 }
                 else if (tipo == "maitre")
                 {
                     this.Hide();
                     menuReserva mR = new menuReserva();
+                    BD.nombreUser = dataReader.GetValue(1).ToString();
                     mR.Show();
                 }
                 else if (tipo == "cajero")
                 {
                     this.Hide();
                     menuCaja mC = new menuCaja();
+                    BD.nombreUser = dataReader.GetValue(1).ToString();
                     mC.Show();
                 }
             }
@@ -108,6 +113,8 @@ namespace SistemaRestaurant
             {
                 MessageBox.Show("Usuario o Contraseña incorrectos");
             }
+            dataReader.Close();
+            BD.cnn.Close();
         }
     }
 }
