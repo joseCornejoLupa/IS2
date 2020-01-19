@@ -86,6 +86,12 @@
     <Compile Include="gestionCarta.Designer.cs">
       <DependentUpon>gestionCarta.cs</DependentUpon>
     </Compile>
+    <Compile Include="gestionReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestionReserva.Designer.cs">
+      <DependentUpon>gestionReserva.cs</DependentUpon>
+    </Compile>
     <Compile Include="loggin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gestionCarta.resx">
       <DependentUpon>gestionCarta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestionReserva.resx">
+      <DependentUpon>gestionReserva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loggin.resx">
       <DependentUpon>loggin.cs</DependentUpon>
