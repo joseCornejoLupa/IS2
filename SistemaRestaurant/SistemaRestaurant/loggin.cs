@@ -22,7 +22,6 @@ namespace SistemaRestaurant
         public login()
         {
             InitializeComponent();
-            BD.cnn.Open();
         }
 
         private void loggin_Load(object sender, EventArgs e)
@@ -67,37 +66,47 @@ namespace SistemaRestaurant
 
         private void button1_Click(object sender, EventArgs e)
         {
+            BD.cnn.Open();
             string tipo;
             SqlCommand command;
             String sql, Output = "";
             SqlDataReader dataReader;
-            sql = "select usuario, password, tipo from empleado";
+            sql = "select tipo from empleado where usuario = 'chef' AND password = 'chef';";
             command = new SqlCommand(sql, BD.cnn);
             dataReader = command.ExecuteReader();
-            while (dataReader.Read())
+            dataReader.Read();
+            try
             {
-                if (textBox1.Text == dataReader.GetValue(0))
+                tipo = dataReader.GetValue(0).ToString();
+                if (tipo == "chef" || tipo == "bartender")
                 {
+                    this.Hide();
+                    menuChefBartender mCB = new menuChefBartender();
+                    mCB.Show();
 
-                    if (textBox2.Text == dataReader.GetValue(1))
-                    {
-                        if(dataReader.GetValue(2) == "chef" || dataReader.GetValue(2) == "bartender")
-                        {
-                            menuChefBartender mCB = new menuChefBartender();
-                            mCB.Show();
-                        }
-                        else if(dataReader.GetValue(2) == "mozo")
-                        {
-                            menuChefBartender mCB = new menuChefBartender();
-                            mCB.Show();
-                        }
-                        else if(dataReader.GetValue(2) == "maitre")
-                        {
-                            menuChefBartender mCB = new menuChefBartender();
-                            mCB.Show();
-                        }
-                    }
                 }
+                else if (tipo == "mozo")
+                {
+                    this.Hide();
+                    menuChef mCB = new menuChef();
+                    mCB.Show();
+                }
+                else if (tipo == "maitre")
+                {
+                    this.Hide();
+                    menuReserva mR = new menuReserva();
+                    mR.Show();
+                }
+                else if (tipo == "cajero")
+                {
+                    this.Hide();
+                    menuCaja mC = new menuCaja();
+                    mC.Show();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Usuario o Contraseña incorrectos");
             }
         }
     }
