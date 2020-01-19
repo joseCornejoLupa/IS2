@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-//1.6.1  --gestionReserva--  Jose C
+//1.6.2  --gestionReserva--  Jose C
 
 namespace SistemaRestaurant
 {
@@ -104,6 +104,13 @@ namespace SistemaRestaurant
             }
             dataReader.Close();
             BD.cnn.Close();
+        }
+
+        private void materialFlatButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            menuReserva mR = new menuReserva();
+            mR.Show();
         }
     }
 }

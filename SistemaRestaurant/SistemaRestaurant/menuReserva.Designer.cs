@@ -75,6 +75,7 @@
             this.cerrarSesionButton.TabIndex = 5;
             this.cerrarSesionButton.Text = "Cerrar sesión";
             this.cerrarSesionButton.UseVisualStyleBackColor = true;
+            this.cerrarSesionButton.Click += new System.EventHandler(this.cerrarSesionButton_Click);
             // 
             // gestionarReservasButton
             // 
@@ -84,6 +85,7 @@
             this.gestionarReservasButton.TabIndex = 3;
             this.gestionarReservasButton.Text = "Gestionar reservas";
             this.gestionarReservasButton.UseVisualStyleBackColor = true;
+            this.gestionarReservasButton.Click += new System.EventHandler(this.gestionarReservasButton_Click);
             // 
             // menuReserva
             // 

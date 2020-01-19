@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
+
+//1.6.3 Actualizacion funcionamiento de botones basicos, tambien correcion de cabecera de gestionReserva.cs -- Jose C
 
 namespace SistemaRestaurant
 {
@@ -20,6 +24,20 @@ namespace SistemaRestaurant
         private void menuReserva_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void gestionarReservasButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            gestionReserva gR = new gestionReserva();
+            gR.Show();
+        }
+
+        private void cerrarSesionButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            login lg = new login();
+            lg.Show();
         }
     }
 }
