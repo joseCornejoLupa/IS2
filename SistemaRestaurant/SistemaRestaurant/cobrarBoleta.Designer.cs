@@ -29,77 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idboletaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idpedidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.montoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.boletaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.restauranteDataSet1 = new SistemaRestaurant.RestauranteDataSet1();
             this.boletaTableAdapter = new SistemaRestaurant.RestauranteDataSet1TableAdapters.boletaTableAdapter();
-            this.regresar = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.IdBoleta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idboleta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Detalle = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Monto = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Cobrar = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.idPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.boletaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restauranteDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idboletaDataGridViewTextBoxColumn,
-            this.fechaDataGridViewTextBoxColumn,
-            this.idpedidoDataGridViewTextBoxColumn,
-            this.montoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.boletaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 64);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(584, 537);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // idboletaDataGridViewTextBoxColumn
-            // 
-            this.idboletaDataGridViewTextBoxColumn.DataPropertyName = "id_boleta";
-            this.idboletaDataGridViewTextBoxColumn.HeaderText = "id_boleta";
-            this.idboletaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idboletaDataGridViewTextBoxColumn.Name = "idboletaDataGridViewTextBoxColumn";
-            this.idboletaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idboletaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // fechaDataGridViewTextBoxColumn
-            // 
-            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "fecha";
-            this.fechaDataGridViewTextBoxColumn.HeaderText = "fecha";
-            this.fechaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
-            this.fechaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // idpedidoDataGridViewTextBoxColumn
-            // 
-            this.idpedidoDataGridViewTextBoxColumn.DataPropertyName = "id_pedido";
-            this.idpedidoDataGridViewTextBoxColumn.HeaderText = "id_pedido";
-            this.idpedidoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idpedidoDataGridViewTextBoxColumn.Name = "idpedidoDataGridViewTextBoxColumn";
-            this.idpedidoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // montoDataGridViewTextBoxColumn
-            // 
-            this.montoDataGridViewTextBoxColumn.DataPropertyName = "monto";
-            this.montoDataGridViewTextBoxColumn.HeaderText = "monto";
-            this.montoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
-            this.montoDataGridViewTextBoxColumn.Width = 125;
             // 
             // boletaBindingSource
             // 
@@ -115,92 +57,95 @@
             // 
             this.boletaTableAdapter.ClearBeforeFill = true;
             // 
-            // regresar
+            // materialFlatButton1
             // 
-            this.regresar.Location = new System.Drawing.Point(897, 552);
-            this.regresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.regresar.Name = "regresar";
-            this.regresar.Size = new System.Drawing.Size(92, 37);
-            this.regresar.TabIndex = 4;
-            this.regresar.Text = "Regresar";
-            this.regresar.UseVisualStyleBackColor = true;
+            this.materialFlatButton1.AutoSize = true;
+            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialFlatButton1.Depth = 0;
+            this.materialFlatButton1.Location = new System.Drawing.Point(903, 546);
+            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialFlatButton1.Name = "materialFlatButton1";
+            this.materialFlatButton1.Primary = false;
+            this.materialFlatButton1.Size = new System.Drawing.Size(80, 36);
+            this.materialFlatButton1.TabIndex = 3;
+            this.materialFlatButton1.Text = "Regresar";
+            this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click);
             // 
-            // dataGridView2
+            // dataGridView1
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdBoleta,
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idboleta,
             this.fecha,
-            this.Detalle,
-            this.Monto,
-            this.Cobrar});
-            this.dataGridView2.Location = new System.Drawing.Point(219, 270);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(688, 214);
-            this.dataGridView2.TabIndex = 5;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.idPedido,
+            this.monto});
+            this.dataGridView1.Location = new System.Drawing.Point(32, 93);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(854, 444);
+            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // IdBoleta
+            // idboleta
             // 
-            this.IdBoleta.HeaderText = "Id Boleta";
-            this.IdBoleta.Name = "IdBoleta";
+            this.idboleta.HeaderText = "Id Boleta";
+            this.idboleta.Name = "idboleta";
+            this.idboleta.ReadOnly = true;
+            this.idboleta.Width = 200;
             // 
             // fecha
             // 
-            this.fecha.HeaderText = "Fecha";
+            this.fecha.HeaderText = "Fecha Emision";
             this.fecha.Name = "fecha";
+            this.fecha.ReadOnly = true;
+            this.fecha.Width = 200;
             // 
-            // Detalle
+            // idPedido
             // 
-            this.Detalle.HeaderText = "Detalle";
-            this.Detalle.Name = "Detalle";
+            this.idPedido.HeaderText = "Pedido Asociado";
+            this.idPedido.Name = "idPedido";
+            this.idPedido.ReadOnly = true;
+            this.idPedido.Width = 200;
             // 
-            // Monto
+            // monto
             // 
-            this.Monto.HeaderText = "Monto";
-            this.Monto.Name = "Monto";
-            // 
-            // Cobrar
-            // 
-            this.Cobrar.HeaderText = "Cobrar";
-            this.Cobrar.Name = "Cobrar";
+            this.monto.HeaderText = "Monto Cobrado";
+            this.monto.Name = "monto";
+            this.monto.ReadOnly = true;
+            this.monto.Width = 200;
             // 
             // cobrarBoleta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.regresar);
+            this.Controls.Add(this.materialFlatButton1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "cobrarBoleta";
             this.Text = "cobrarBoleta";
             this.Load += new System.EventHandler(this.cobrarBoleta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boletaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.restauranteDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private RestauranteDataSet1 restauranteDataSet1;
         private System.Windows.Forms.BindingSource boletaBindingSource;
         private RestauranteDataSet1TableAdapters.boletaTableAdapter boletaTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idboletaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idpedidoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn montoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button regresar;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdBoleta;
+        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idboleta;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
-        private System.Windows.Forms.DataGridViewButtonColumn Detalle;
-        private System.Windows.Forms.DataGridViewButtonColumn Monto;
-        private System.Windows.Forms.DataGridViewButtonColumn Cobrar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idPedido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monto;
     }
 }

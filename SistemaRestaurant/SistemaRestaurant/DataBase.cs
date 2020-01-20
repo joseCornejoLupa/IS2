@@ -13,6 +13,7 @@ namespace SistemaRestaurant
     {
         public static string connetionString = @"Data Source=.\SQLEXPRESS; Initial Catalog=Restaurante;User ID=sa;Password=admin";
         public static SqlConnection cnn = new SqlConnection(connetionString);
+        public static SqlConnection cnn2 = new SqlConnection(connetionString);
         public static string nombreUser;
 
 

@@ -69,10 +69,12 @@ namespace SistemaRestaurant
 
         private void ViewPedido_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
             if (ViewPedido.Columns[e.ColumnIndex].Name == "Detalles")
             {
                 Form detalle = new detallesPedido(ViewPedido.Rows[e.RowIndex].Cells[0].Value.ToString());
                 detalle.ShowDialog();
+                
 
 
             }
@@ -96,6 +98,15 @@ namespace SistemaRestaurant
                 command.Dispose();
                 RefreshTable();
             }
+        }
+
+        private void materialFlatButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            menuChefBartender mC = new menuChefBartender();
+            BD.cnn.Close();
+            mC.Show();
+            
         }
     }
 }

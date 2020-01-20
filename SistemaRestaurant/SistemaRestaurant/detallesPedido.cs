@@ -42,6 +42,7 @@ namespace SistemaRestaurant
                 ViewDetalles.Rows.Add(dataReader.GetValue(0));
             }
             dataReader.Close();
+           // BD.cnn.Close();
         }
 
         private void ViewDetalles_CellContentClick(object sender, DataGridViewCellEventArgs e)

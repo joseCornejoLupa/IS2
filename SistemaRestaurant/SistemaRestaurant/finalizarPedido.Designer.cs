@@ -51,12 +51,13 @@
             this.materialFlatButton1.TabIndex = 3;
             this.materialFlatButton1.Text = "Regresar";
             this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click_1);
             // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.textBox1.Location = new System.Drawing.Point(440, 135);
+            this.textBox1.Location = new System.Drawing.Point(32, 85);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(123, 38);
             this.textBox1.TabIndex = 24;
@@ -69,9 +70,9 @@
             this.idReserva,
             this.Detalles,
             this.Finalizar});
-            this.ViewPedido.Location = new System.Drawing.Point(317, 179);
+            this.ViewPedido.Location = new System.Drawing.Point(32, 129);
             this.ViewPedido.Name = "ViewPedido";
-            this.ViewPedido.Size = new System.Drawing.Size(352, 272);
+            this.ViewPedido.Size = new System.Drawing.Size(355, 272);
             this.ViewPedido.TabIndex = 23;
             this.ViewPedido.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ViewPedido_CellContentClick);
             // 

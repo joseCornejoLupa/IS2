@@ -77,7 +77,9 @@ namespace SistemaRestaurant
             dataReader.Read();
             try
             {
+                
                 tipo = dataReader.GetValue(0).ToString();
+                BD.tipo = tipo;
                 if (tipo == "chef" || tipo == "bartender")
                 {
                     this.Hide();

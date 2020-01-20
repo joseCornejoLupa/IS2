@@ -50,6 +50,15 @@ namespace SistemaRestaurant
             this.Hide();
             login ll = new login();
             ll.Show();
+            BD.cnn.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            finalizarPedido ll = new finalizarPedido();
+            ll.Show();
+            BD.cnn.Close();
         }
     }
 }

@@ -28,75 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.labelbienvenido = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.visualizarVentas = new System.Windows.Forms.Button();
             this.cerrarSesion = new System.Windows.Forms.Button();
-            this.comprarSuministro = new System.Windows.Forms.Button();
-            this.v = new System.Windows.Forms.Button();
             this.emitirBoleta = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label1.Location = new System.Drawing.Point(538, 196);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 39);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Usuario";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelbienvenido
             // 
             this.labelbienvenido.AutoSize = true;
             this.labelbienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 55F);
-            this.labelbienvenido.Location = new System.Drawing.Point(255, 79);
+            this.labelbienvenido.Location = new System.Drawing.Point(406, 97);
             this.labelbienvenido.Name = "labelbienvenido";
-            this.labelbienvenido.Size = new System.Drawing.Size(706, 170);
-            this.labelbienvenido.TabIndex = 9;
-            this.labelbienvenido.Text = "Bienvenido al menú \r\nde caja!";
-            this.labelbienvenido.Click += new System.EventHandler(this.labelbienvenido_Click);
+            this.labelbienvenido.Size = new System.Drawing.Size(403, 85);
+            this.labelbienvenido.TabIndex = 12;
+            this.labelbienvenido.Text = "Bienvenido";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.visualizarVentas);
             this.panel1.Controls.Add(this.cerrarSesion);
-            this.panel1.Controls.Add(this.comprarSuministro);
-            this.panel1.Controls.Add(this.v);
             this.panel1.Controls.Add(this.emitirBoleta);
-            this.panel1.Location = new System.Drawing.Point(1, 64);
+            this.panel1.Location = new System.Drawing.Point(2, 64);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 540);
-            this.panel1.TabIndex = 8;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // visualizarVentas
-            // 
-            this.visualizarVentas.Location = new System.Drawing.Point(0, 172);
-            this.visualizarVentas.Name = "visualizarVentas";
-            this.visualizarVentas.Size = new System.Drawing.Size(230, 61);
-            this.visualizarVentas.TabIndex = 5;
-            this.visualizarVentas.Text = "Visualizar Ventas";
-            this.visualizarVentas.UseVisualStyleBackColor = true;
+            this.panel1.TabIndex = 11;
             // 
             // cerrarSesion
             // 
-            this.cerrarSesion.Location = new System.Drawing.Point(0, 463);
+            this.cerrarSesion.Location = new System.Drawing.Point(0, 474);
             this.cerrarSesion.Name = "cerrarSesion";
             this.cerrarSesion.Size = new System.Drawing.Size(230, 61);
             this.cerrarSesion.TabIndex = 6;
             this.cerrarSesion.Text = "Cerrar Sesión";
             this.cerrarSesion.UseVisualStyleBackColor = true;
-            // 
-            // comprarSuministro
-            // 
-            this.comprarSuministro.Location = new System.Drawing.Point(0, 115);
-            this.comprarSuministro.Name = "comprarSuministro";
-            this.comprarSuministro.Size = new System.Drawing.Size(230, 61);
-            this.comprarSuministro.TabIndex = 4;
-            this.comprarSuministro.Text = "Cobrar Suministros";
-            this.comprarSuministro.UseVisualStyleBackColor = true;
-            // 
-            // v
-            // 
-            this.v.Location = new System.Drawing.Point(0, 58);
-            this.v.Name = "v";
-            this.v.Size = new System.Drawing.Size(230, 61);
-            this.v.TabIndex = 3;
-            this.v.Text = "Cobrar Boleta";
-            this.v.UseVisualStyleBackColor = true;
+            this.cerrarSesion.Click += new System.EventHandler(this.cerrarSesion_Click);
             // 
             // emitirBoleta
             // 
@@ -104,14 +82,16 @@
             this.emitirBoleta.Name = "emitirBoleta";
             this.emitirBoleta.Size = new System.Drawing.Size(230, 61);
             this.emitirBoleta.TabIndex = 2;
-            this.emitirBoleta.Text = "Emitir Boleta";
+            this.emitirBoleta.Text = "Tomar Pedido";
             this.emitirBoleta.UseVisualStyleBackColor = true;
+            this.emitirBoleta.Click += new System.EventHandler(this.emitirBoleta_Click);
             // 
             // menuChef
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelbienvenido);
             this.Controls.Add(this.panel1);
             this.Name = "menuChef";
@@ -125,12 +105,10 @@
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelbienvenido;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button visualizarVentas;
         private System.Windows.Forms.Button cerrarSesion;
-        private System.Windows.Forms.Button comprarSuministro;
-        private System.Windows.Forms.Button v;
         private System.Windows.Forms.Button emitirBoleta;
     }
 }

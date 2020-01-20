@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.visualizarVentas = new System.Windows.Forms.Button();
             this.emitirBoleta = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,7 +41,6 @@
             // 
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.visualizarVentas);
             this.panel1.Controls.Add(this.emitirBoleta);
             this.panel1.Location = new System.Drawing.Point(0, 64);
             this.panel1.Name = "panel1";
@@ -51,12 +49,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(0, 118);
+            this.button2.Location = new System.Drawing.Point(-1, 59);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(230, 61);
             this.button2.TabIndex = 7;
             this.button2.Text = "Gestionar Pedidos";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -67,16 +66,6 @@
             this.button1.Text = "Cerrar Sesión";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // visualizarVentas
-            // 
-            this.visualizarVentas.Location = new System.Drawing.Point(0, 59);
-            this.visualizarVentas.Name = "visualizarVentas";
-            this.visualizarVentas.Size = new System.Drawing.Size(230, 61);
-            this.visualizarVentas.TabIndex = 5;
-            this.visualizarVentas.Text = "Ver Carta";
-            this.visualizarVentas.UseVisualStyleBackColor = true;
-            this.visualizarVentas.Click += new System.EventHandler(this.visualizarVentas_Click);
             // 
             // emitirBoleta
             // 
@@ -132,7 +121,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button visualizarVentas;
         private System.Windows.Forms.Button emitirBoleta;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

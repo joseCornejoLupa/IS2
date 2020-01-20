@@ -16,7 +16,7 @@ namespace SistemaRestaurant
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new finalizarPedido());
+            Application.Run(new login());
         }
     }
 }
