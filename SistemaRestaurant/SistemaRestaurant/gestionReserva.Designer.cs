@@ -28,136 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.horaFinTextBox = new System.Windows.Forms.TextBox();
-            this.horaInicioTextBox = new System.Windows.Forms.TextBox();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.confirmarButton = new MaterialSkin.Controls.MaterialFlatButton();
-            this.dataGridReserva = new System.Windows.Forms.DataGridView();
-            this.mesa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horaFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modificarButtons = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.eliminarButtons = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.reservarButtons = new System.Windows.Forms.DataGridViewButtonColumn();
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridReserva)).BeginInit();
+            this.backButton = new MaterialSkin.Controls.MaterialFlatButton();
+            this.modifyButton = new MaterialSkin.Controls.MaterialFlatButton();
+            this.QueryButton = new MaterialSkin.Controls.MaterialFlatButton();
+            this.hfComboBox = new System.Windows.Forms.ComboBox();
+            this.hiComboBox = new System.Windows.Forms.ComboBox();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.gestionarReservaDataGridView = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modificarButtons2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.eliminarButtons2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.reservarButtons2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.gestionarReservaDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // horaFinTextBox
-            // 
-            this.horaFinTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horaFinTextBox.Location = new System.Drawing.Point(755, 199);
-            this.horaFinTextBox.Name = "horaFinTextBox";
-            this.horaFinTextBox.Size = new System.Drawing.Size(232, 26);
-            this.horaFinTextBox.TabIndex = 14;
-            // 
-            // horaInicioTextBox
-            // 
-            this.horaInicioTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.horaInicioTextBox.Location = new System.Drawing.Point(755, 132);
-            this.horaInicioTextBox.Name = "horaInicioTextBox";
-            this.horaInicioTextBox.Size = new System.Drawing.Size(232, 26);
-            this.horaInicioTextBox.TabIndex = 13;
-            // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(751, 167);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(70, 19);
-            this.materialLabel3.TabIndex = 12;
-            this.materialLabel3.Text = "Hora Fin:";
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(751, 97);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(87, 19);
-            this.materialLabel2.TabIndex = 11;
-            this.materialLabel2.Text = "Hora Inicio:";
-            // 
-            // confirmarButton
-            // 
-            this.confirmarButton.AutoSize = true;
-            this.confirmarButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.confirmarButton.Depth = 0;
-            this.confirmarButton.Location = new System.Drawing.Point(826, 252);
-            this.confirmarButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.confirmarButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.confirmarButton.Name = "confirmarButton";
-            this.confirmarButton.Primary = false;
-            this.confirmarButton.Size = new System.Drawing.Size(84, 36);
-            this.confirmarButton.TabIndex = 17;
-            this.confirmarButton.Text = "Modificar";
-            this.confirmarButton.UseVisualStyleBackColor = true;
-            this.confirmarButton.Click += new System.EventHandler(this.confirmarButton_Click_1);
-            // 
-            // dataGridReserva
-            // 
-            this.dataGridReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridReserva.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.mesa,
-            this.horaInicio,
-            this.horaFin,
-            this.estado,
-            this.modificarButtons,
-            this.eliminarButtons,
-            this.reservarButtons});
-            this.dataGridReserva.Location = new System.Drawing.Point(0, 63);
-            this.dataGridReserva.Name = "dataGridReserva";
-            this.dataGridReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridReserva.Size = new System.Drawing.Size(736, 538);
-            this.dataGridReserva.TabIndex = 18;
-            this.dataGridReserva.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridReserva_CellContentClick_1);
-            // 
-            // mesa
-            // 
-            this.mesa.HeaderText = "Mesa";
-            this.mesa.Name = "mesa";
-            // 
-            // horaInicio
-            // 
-            this.horaInicio.HeaderText = "Hora Inicio";
-            this.horaInicio.Name = "horaInicio";
-            // 
-            // horaFin
-            // 
-            this.horaFin.HeaderText = "Hora Fin";
-            this.horaFin.Name = "horaFin";
-            // 
-            // estado
-            // 
-            this.estado.HeaderText = "Estado";
-            this.estado.Name = "estado";
-            // 
-            // modificarButtons
-            // 
-            this.modificarButtons.HeaderText = "Modificar";
-            this.modificarButtons.Name = "modificarButtons";
-            this.modificarButtons.Text = "Modificar";
-            // 
-            // eliminarButtons
-            // 
-            this.eliminarButtons.HeaderText = "Eliminar";
-            this.eliminarButtons.Name = "eliminarButtons";
-            this.eliminarButtons.Text = "Eliminar";
-            // 
-            // reservarButtons
-            // 
-            this.reservarButtons.HeaderText = "Reservar";
-            this.reservarButtons.Name = "reservarButtons";
-            this.reservarButtons.Text = "Reservar";
             // 
             // materialFlatButton1
             // 
@@ -175,41 +63,227 @@
             this.materialFlatButton1.UseVisualStyleBackColor = true;
             this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click);
             // 
+            // backButton
+            // 
+            this.backButton.AutoSize = true;
+            this.backButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.backButton.Depth = 0;
+            this.backButton.Location = new System.Drawing.Point(906, 551);
+            this.backButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.backButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.backButton.Name = "backButton";
+            this.backButton.Primary = false;
+            this.backButton.Size = new System.Drawing.Size(80, 36);
+            this.backButton.TabIndex = 27;
+            this.backButton.Text = "Regresar";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // modifyButton
+            // 
+            this.modifyButton.AutoSize = true;
+            this.modifyButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.modifyButton.Depth = 0;
+            this.modifyButton.Location = new System.Drawing.Point(752, 257);
+            this.modifyButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.modifyButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.modifyButton.Name = "modifyButton";
+            this.modifyButton.Primary = false;
+            this.modifyButton.Size = new System.Drawing.Size(84, 36);
+            this.modifyButton.TabIndex = 26;
+            this.modifyButton.Text = "Modificar";
+            this.modifyButton.UseVisualStyleBackColor = true;
+            this.modifyButton.Click += new System.EventHandler(this.modifyButton_Click);
+            // 
+            // QueryButton
+            // 
+            this.QueryButton.AutoSize = true;
+            this.QueryButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.QueryButton.Depth = 0;
+            this.QueryButton.Location = new System.Drawing.Point(894, 257);
+            this.QueryButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.QueryButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.QueryButton.Name = "QueryButton";
+            this.QueryButton.Primary = false;
+            this.QueryButton.Size = new System.Drawing.Size(91, 36);
+            this.QueryButton.TabIndex = 25;
+            this.QueryButton.Text = "Consultar";
+            this.QueryButton.UseVisualStyleBackColor = true;
+            this.QueryButton.Click += new System.EventHandler(this.QueryButton_Click);
+            // 
+            // hfComboBox
+            // 
+            this.hfComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hfComboBox.FormattingEnabled = true;
+            this.hfComboBox.Items.AddRange(new object[] {
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22"});
+            this.hfComboBox.Location = new System.Drawing.Point(752, 220);
+            this.hfComboBox.Name = "hfComboBox";
+            this.hfComboBox.Size = new System.Drawing.Size(234, 28);
+            this.hfComboBox.TabIndex = 24;
+            // 
+            // hiComboBox
+            // 
+            this.hiComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hiComboBox.FormattingEnabled = true;
+            this.hiComboBox.Items.AddRange(new object[] {
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21"});
+            this.hiComboBox.Location = new System.Drawing.Point(752, 142);
+            this.hiComboBox.Name = "hiComboBox";
+            this.hiComboBox.Size = new System.Drawing.Size(234, 28);
+            this.hiComboBox.TabIndex = 23;
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(748, 185);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(66, 19);
+            this.materialLabel4.TabIndex = 22;
+            this.materialLabel4.Text = "Hora Fin";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(748, 108);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(83, 19);
+            this.materialLabel1.TabIndex = 21;
+            this.materialLabel1.Text = "Hora Inicio";
+            // 
+            // gestionarReservaDataGridView
+            // 
+            this.gestionarReservaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gestionarReservaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.modificarButtons2,
+            this.eliminarButtons2,
+            this.reservarButtons2});
+            this.gestionarReservaDataGridView.Location = new System.Drawing.Point(-2, 64);
+            this.gestionarReservaDataGridView.Name = "gestionarReservaDataGridView";
+            this.gestionarReservaDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gestionarReservaDataGridView.Size = new System.Drawing.Size(744, 538);
+            this.gestionarReservaDataGridView.TabIndex = 20;
+            this.gestionarReservaDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gestionarReservaDataGridView_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Mesa";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Hora Inicio";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Hora Fin";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Estado";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // modificarButtons2
+            // 
+            this.modificarButtons2.HeaderText = "Modificar";
+            this.modificarButtons2.Name = "modificarButtons2";
+            this.modificarButtons2.Text = "Modificar";
+            // 
+            // eliminarButtons2
+            // 
+            this.eliminarButtons2.HeaderText = "Eliminar";
+            this.eliminarButtons2.Name = "eliminarButtons2";
+            this.eliminarButtons2.Text = "Eliminar";
+            // 
+            // reservarButtons2
+            // 
+            this.reservarButtons2.HeaderText = "Reservar";
+            this.reservarButtons2.Name = "reservarButtons2";
+            this.reservarButtons2.Text = "Reservar";
+            // 
             // gestionReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.modifyButton);
+            this.Controls.Add(this.QueryButton);
+            this.Controls.Add(this.hfComboBox);
+            this.Controls.Add(this.hiComboBox);
+            this.Controls.Add(this.materialLabel4);
+            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.gestionarReservaDataGridView);
             this.Controls.Add(this.materialFlatButton1);
-            this.Controls.Add(this.dataGridReserva);
-            this.Controls.Add(this.confirmarButton);
-            this.Controls.Add(this.horaFinTextBox);
-            this.Controls.Add(this.horaInicioTextBox);
-            this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.materialLabel2);
             this.Name = "gestionReserva";
             this.Text = "Gestion Reserva";
             this.Load += new System.EventHandler(this.gestionReserva_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridReserva)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestionarReservaDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox horaFinTextBox;
-        private System.Windows.Forms.TextBox horaInicioTextBox;
-        private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialFlatButton confirmarButton;
-        private System.Windows.Forms.DataGridView dataGridReserva;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mesa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horaInicio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horaFin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn estado;
-        private System.Windows.Forms.DataGridViewButtonColumn modificarButtons;
-        private System.Windows.Forms.DataGridViewButtonColumn eliminarButtons;
-        private System.Windows.Forms.DataGridViewButtonColumn reservarButtons;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
+        private MaterialSkin.Controls.MaterialFlatButton backButton;
+        private MaterialSkin.Controls.MaterialFlatButton modifyButton;
+        private MaterialSkin.Controls.MaterialFlatButton QueryButton;
+        private System.Windows.Forms.ComboBox hfComboBox;
+        private System.Windows.Forms.ComboBox hiComboBox;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.DataGridView gestionarReservaDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewButtonColumn modificarButtons2;
+        private System.Windows.Forms.DataGridViewButtonColumn eliminarButtons2;
+        private System.Windows.Forms.DataGridViewButtonColumn reservarButtons2;
     }
 }
