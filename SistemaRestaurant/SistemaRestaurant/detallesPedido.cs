@@ -17,7 +17,7 @@ namespace SistemaRestaurant
         public detallesPedido(string id)
         {
             InitializeComponent();
-            //BD.cnn.Open();
+            BD.cnn.Open();
             codigo = id;
         }
 
@@ -42,7 +42,7 @@ namespace SistemaRestaurant
                 ViewDetalles.Rows.Add(dataReader.GetValue(0));
             }
             dataReader.Close();
-           // BD.cnn.Close();
+            BD.cnn.Close();
         }
 
         private void ViewDetalles_CellContentClick(object sender, DataGridViewCellEventArgs e)

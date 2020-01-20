@@ -92,7 +92,7 @@ namespace SistemaRestaurant
                         command2 = new SqlCommand(sql2, BD.cnn2);
                         dataReader2 = command2.ExecuteReader();
                         dataReader2.Read();
-                        sumaBebidas += Convert.ToDouble(dataReader.GetValue(1).ToString()) * Convert.ToDouble((dataReader2.GetValue(0).ToString()).Replace('.', ','));
+                        sumaBebidas += Convert.ToDouble(dataReader.GetValue(1).ToString()) * Convert.ToDouble((dataReader2.GetValue(0).ToString()));
                         detPedido += dataReader.GetValue(1).ToString() + " x " + dataReader2.GetValue(1).ToString() + "       " + dataReader2.GetValue(0).ToString() + "\n";
                         dataReader2.Close();
                     }
@@ -113,7 +113,7 @@ namespace SistemaRestaurant
                         command2 = new SqlCommand(sql2, BD.cnn2);
                         dataReader2 = command2.ExecuteReader();
                         dataReader2.Read();
-                        sumaBebidas += Convert.ToDouble(dataReader.GetValue(1).ToString()) * Convert.ToDouble((dataReader2.GetValue(0).ToString()).Replace('.', ','));
+                        sumaBebidas += Convert.ToDouble(dataReader.GetValue(1).ToString()) * Convert.ToDouble((dataReader2.GetValue(0).ToString()));
                         detPedido += dataReader.GetValue(1).ToString() + " x " + dataReader2.GetValue(1).ToString() + "       " + dataReader2.GetValue(0).ToString() + "\n";
                         dataReader2.Close();
                     }

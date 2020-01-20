@@ -83,7 +83,7 @@ namespace SistemaRestaurant
                 int fila = e.RowIndex;
                 string sql;
 
-
+                BD.cnn.Open();
 
                 if (BD.tipo == "chef")
                     sql = "UPDATE pedido SET estado = '1' + substring(estado, 2, len(estado)) WHERE id=" + ViewPedido.Rows[fila].Cells[0].Value.ToString() + ";";
@@ -97,14 +97,16 @@ namespace SistemaRestaurant
                 adapter.UpdateCommand.ExecuteNonQuery();
                 command.Dispose();
                 RefreshTable();
+                BD.cnn.Close();
             }
         }
 
         private void materialFlatButton1_Click_1(object sender, EventArgs e)
         {
+            BD.cnn.Close();
             this.Hide();
             menuChefBartender mC = new menuChefBartender();
-            BD.cnn.Close();
+            
             mC.Show();
             
         }

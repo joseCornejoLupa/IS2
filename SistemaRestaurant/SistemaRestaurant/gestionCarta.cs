@@ -385,6 +385,7 @@ namespace SistemaRestaurant
         private void materialFlatButton4_Click(object sender, EventArgs e)
         {
             this.Hide();
+            BD.cnn.Close();
             menuChefBartender cCB = new menuChefBartender();
             cCB.Show();
         }
