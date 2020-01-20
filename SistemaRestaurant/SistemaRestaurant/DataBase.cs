@@ -13,7 +13,15 @@ namespace SistemaRestaurant
     {
         public static string connetionString = @"Data Source=.\SQLEXPRESS; Initial Catalog=Restaurante;User ID=sa;Password=admin";
         public static SqlConnection cnn = new SqlConnection(connetionString);
-        public static string nombreUser;               
+        public static string nombreUser;
+
+
+        public static string g_tipo = "tipoEmpleado";
+        public static string tipo
+        {
+            get { return g_tipo; }
+            set { g_tipo = value; }
+        }
     }
     // ---------------------
 

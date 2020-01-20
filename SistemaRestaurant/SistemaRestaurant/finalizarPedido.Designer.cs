@@ -28,25 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.idPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ViewPedido = new System.Windows.Forms.DataGridView();
+            this.idReserva = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Detalles = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Finalizar = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewPedido)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idPedido,
-            this.Detalles,
-            this.Finalizar});
-            this.dataGridView1.Location = new System.Drawing.Point(274, 163);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(352, 272);
-            this.dataGridView1.TabIndex = 4;
             // 
             // materialFlatButton1
             // 
@@ -63,14 +52,36 @@
             this.materialFlatButton1.Text = "Regresar";
             this.materialFlatButton1.UseVisualStyleBackColor = true;
             // 
-            // idPedido
+            // textBox1
             // 
-            this.idPedido.HeaderText = "idPedido";
-            this.idPedido.Name = "idPedido";
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.textBox1.Location = new System.Drawing.Point(440, 135);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(123, 38);
+            this.textBox1.TabIndex = 24;
+            this.textBox1.Text = "Pedidos";
+            // 
+            // ViewPedido
+            // 
+            this.ViewPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ViewPedido.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idReserva,
+            this.Detalles,
+            this.Finalizar});
+            this.ViewPedido.Location = new System.Drawing.Point(317, 179);
+            this.ViewPedido.Name = "ViewPedido";
+            this.ViewPedido.Size = new System.Drawing.Size(352, 272);
+            this.ViewPedido.TabIndex = 23;
+            // 
+            // idReserva
+            // 
+            this.idReserva.HeaderText = "Codigo de Pedido";
+            this.idReserva.Name = "idReserva";
             // 
             // Detalles
             // 
-            this.Detalles.HeaderText = "Detalles";
+            this.Detalles.HeaderText = "Detalles de Pedido";
             this.Detalles.Name = "Detalles";
             this.Detalles.Text = "Detalles";
             this.Detalles.UseColumnTextForButtonValue = true;
@@ -79,7 +90,7 @@
             // 
             this.Finalizar.HeaderText = "Finalizar";
             this.Finalizar.Name = "Finalizar";
-            this.Finalizar.Text = "Finalizar";
+            this.Finalizar.Text = "Finalizado";
             this.Finalizar.UseColumnTextForButtonValue = true;
             // 
             // finalizarPedido
@@ -87,23 +98,24 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ViewPedido);
             this.Controls.Add(this.materialFlatButton1);
             this.Name = "finalizarPedido";
             this.Text = "Finalizar Pedido";
             this.Load += new System.EventHandler(this.finalizarPedido_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewPedido)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idPedido;
+        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView ViewPedido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idReserva;
         private System.Windows.Forms.DataGridViewButtonColumn Detalles;
         private System.Windows.Forms.DataGridViewButtonColumn Finalizar;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
     }
 }
