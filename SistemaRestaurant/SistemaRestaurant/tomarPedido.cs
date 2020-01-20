@@ -137,7 +137,7 @@ namespace SistemaRestaurant
         private void materialFlatButton2_Click_1(object sender, EventArgs e)
         {
             //verificando reserva
-            string sql = "SELECT COUNT(*) FROM reserva WHERE id_reserva=" + idReserva.Text + "  and id_pedido is NULL;";
+            string sql = "SELECT COUNT(*) FROM reserva WHERE id=" + idReserva.Text + "  and id_pedido is NULL;";
             SqlDataReader dataReader;
             SqlCommand command;
             command = new SqlCommand(sql, BD.cnn);
@@ -191,7 +191,7 @@ namespace SistemaRestaurant
             dataReader.Close();
 
             //asignandooo
-            sql = "UPDATE reserva SET id_pedido=" + codigoPedido + "WHERE id_reserva=" + idReserva.Text + ";";
+            sql = "UPDATE reserva SET id_pedido=" + codigoPedido + "WHERE id=" + idReserva.Text + ";";
 
 
             command = new SqlCommand(sql, BD.cnn);

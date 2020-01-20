@@ -106,7 +106,6 @@ namespace SistemaRestaurant
             BD.cnn.Close();
             this.Hide();
             menuChefBartender mC = new menuChefBartender();
-            
             mC.Show();
             
         }

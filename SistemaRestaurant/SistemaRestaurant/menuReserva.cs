@@ -23,7 +23,7 @@ namespace SistemaRestaurant
 
         private void menuReserva_Load(object sender, EventArgs e)
         {
-
+            nombreUsuario.Text = BD.nombreUser;
         }
 
         private void gestionarReservasButton_Click(object sender, EventArgs e)
@@ -38,6 +38,13 @@ namespace SistemaRestaurant
             this.Hide();
             login lg = new login();
             lg.Show();
+        }
+
+        private void verReservacionesButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            verReservas viewR = new verReservas();
+            viewR.Show();
         }
     }
 }

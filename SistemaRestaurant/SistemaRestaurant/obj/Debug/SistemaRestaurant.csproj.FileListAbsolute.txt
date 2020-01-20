@@ -201,3 +201,5 @@ D:\Computer Science\Software 2\ultimoGG\IS2\SistemaRestaurant\SistemaRestaurant\
 D:\Computer Science\Software 2\ultimoGG\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.csproj.CopyComplete
 D:\Computer Science\Software 2\ultimoGG\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.exe
 D:\Computer Science\Software 2\ultimoGG\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.pdb
+C:\Users\Jose\Documents\GitHub\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.detallesPedido.resources
+C:\Users\Jose\Documents\GitHub\proyecto\IS2\SistemaRestaurant\SistemaRestaurant\obj\Debug\SistemaRestaurant.verReservas.resources

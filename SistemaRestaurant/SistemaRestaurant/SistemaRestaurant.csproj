@@ -162,6 +162,12 @@
     <Compile Include="tomarPedido.Designer.cs">
       <DependentUpon>tomarPedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="verReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verReservas.Designer.cs">
+      <DependentUpon>verReservas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="cobrarBoleta.resx">
       <DependentUpon>cobrarBoleta.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +221,9 @@
     </Compile>
     <EmbeddedResource Include="tomarPedido.resx">
       <DependentUpon>tomarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verReservas.resx">
+      <DependentUpon>verReservas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

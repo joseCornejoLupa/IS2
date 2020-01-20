@@ -33,6 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.cerrarSesionButton = new System.Windows.Forms.Button();
             this.gestionarReservasButton = new System.Windows.Forms.Button();
+            this.verReservacionesButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +61,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.verReservacionesButton);
             this.panel1.Controls.Add(this.cerrarSesionButton);
             this.panel1.Controls.Add(this.gestionarReservasButton);
             this.panel1.Location = new System.Drawing.Point(0, 64);
@@ -83,9 +85,19 @@
             this.gestionarReservasButton.Name = "gestionarReservasButton";
             this.gestionarReservasButton.Size = new System.Drawing.Size(230, 61);
             this.gestionarReservasButton.TabIndex = 3;
-            this.gestionarReservasButton.Text = "Gestionar reservas";
+            this.gestionarReservasButton.Text = "Añadir reservaciones";
             this.gestionarReservasButton.UseVisualStyleBackColor = true;
             this.gestionarReservasButton.Click += new System.EventHandler(this.gestionarReservasButton_Click);
+            // 
+            // verReservacionesButton
+            // 
+            this.verReservacionesButton.Location = new System.Drawing.Point(0, 59);
+            this.verReservacionesButton.Name = "verReservacionesButton";
+            this.verReservacionesButton.Size = new System.Drawing.Size(230, 67);
+            this.verReservacionesButton.TabIndex = 7;
+            this.verReservacionesButton.Text = "Gestionar reservaciones";
+            this.verReservacionesButton.UseVisualStyleBackColor = true;
+            this.verReservacionesButton.Click += new System.EventHandler(this.verReservacionesButton_Click);
             // 
             // menuReserva
             // 
@@ -111,5 +123,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button cerrarSesionButton;
         private System.Windows.Forms.Button gestionarReservasButton;
+        private System.Windows.Forms.Button verReservacionesButton;
     }
 }
