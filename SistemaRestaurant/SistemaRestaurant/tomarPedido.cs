@@ -86,10 +86,58 @@ namespace SistemaRestaurant
 
         }
 
-        private void materialFlatButton2_Click(object sender, EventArgs e)
+        
+
+        private void ViewComida_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (ViewComida.Columns[e.ColumnIndex].Name == "Pedir")
+            {
+                DataGridViewCheckBoxCell checkbox = (DataGridViewCheckBoxCell)ViewComida.CurrentCell;
+
+                bool isChecked = (bool)checkbox.EditedFormattedValue;
+                if (isChecked)
+                {
+                    ViewComida.Rows[e.RowIndex].Cells[4].ReadOnly = false;
+                }
+                else
+                {
+                    ViewComida.Rows[e.RowIndex].Cells[4].Value = "";
+                    ViewComida.Rows[e.RowIndex].Cells[4].ReadOnly = true;
+                }
+            }
+
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (ViewBebida.Columns[e.ColumnIndex].Name == "pedir1")
+            {
+                //MessageBox.Show("HOLA");
+                DataGridViewCheckBoxCell checkbox = (DataGridViewCheckBoxCell)ViewBebida.CurrentCell;
+
+                bool isChecked = (bool)checkbox.EditedFormattedValue;
+                if (isChecked)
+                {
+
+                    ViewBebida.Rows[e.RowIndex].Cells[4].ReadOnly = false;
+                }
+                else
+                {
+                    ViewBebida.Rows[e.RowIndex].Cells[4].Value = "";
+                    ViewBebida.Rows[e.RowIndex].Cells[4].ReadOnly = true;
+                }
+            }
+        }
+
+        
+
+        
+
+        private void materialFlatButton2_Click_1(object sender, EventArgs e)
         {
             //verificando reserva
-            string sql = "SELECT COUNT(*) FROM reserva WHERE id_reserva=" + idReserva.Text + " and estado=='libre' and id_pedido is NULL;";
+            string sql = "SELECT COUNT(*) FROM reserva WHERE id_reserva=" + idReserva.Text + "  and id_pedido is NULL;";
             SqlDataReader dataReader;
             SqlCommand command;
             command = new SqlCommand(sql, BD.cnn);
@@ -203,28 +251,22 @@ namespace SistemaRestaurant
 
         }
 
-        private void ViewComida_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void materialFlatButton3_Click(object sender, EventArgs e)
         {
-            if (ViewComida.Columns[e.ColumnIndex].Name == "Pedir")
-            {
-                DataGridViewCheckBoxCell checkbox = (DataGridViewCheckBoxCell)ViewComida.CurrentCell;
-
-                bool isChecked = (bool)checkbox.EditedFormattedValue;
-                if (isChecked)
-                {
-                    ViewComida.Rows[e.RowIndex].Cells[4].ReadOnly = false;
-                }
-                else
-                {
-                    ViewComida.Rows[e.RowIndex].Cells[4].Value = "";
-                    ViewComida.Rows[e.RowIndex].Cells[4].ReadOnly = true;
-                }
-            }
-
-
+            RefreshTables();
+            idReserva.Text = string.Empty;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void materialFlatButton1_Click(object sender, EventArgs e)
+        {
+            BD.cnn.Close();
+            this.Hide();
+            Form back = new menuChef();
+            back.ShowDialog();
+            this.Close();
+        }
+
+        private void ViewBebida_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (ViewBebida.Columns[e.ColumnIndex].Name == "pedir1")
             {
@@ -243,21 +285,7 @@ namespace SistemaRestaurant
                     ViewBebida.Rows[e.RowIndex].Cells[4].ReadOnly = true;
                 }
             }
-        }
 
-        private void materialFlatButton3_Click(object sender, EventArgs e)
-        {
-            RefreshTables();
-            idReserva.Text = string.Empty;
-        }
-
-        private void materialFlatButton1_Click(object sender, EventArgs e)
-        {
-            BD.cnn.Close();
-            this.Hide();
-            Form back = new login();
-            back.ShowDialog();
-            this.Close();
         }
     }
 }

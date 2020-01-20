@@ -42,6 +42,7 @@
             this.ViewDetalles.Name = "ViewDetalles";
             this.ViewDetalles.Size = new System.Drawing.Size(265, 411);
             this.ViewDetalles.TabIndex = 1;
+            this.ViewDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ViewDetalles_CellContentClick);
             // 
             // comida
             // 

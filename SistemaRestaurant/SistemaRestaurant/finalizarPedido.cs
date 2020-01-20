@@ -57,7 +57,17 @@ namespace SistemaRestaurant
             dataReader.Close();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        
+        private void materialFlatButton1_Click(object sender, EventArgs e)
+        {
+            BD.cnn.Close();
+            this.Hide();
+            Form back = new menuChefBartender();
+            back.ShowDialog();
+            this.Close();
+        }
+
+        private void ViewPedido_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (ViewPedido.Columns[e.ColumnIndex].Name == "Detalles")
             {
@@ -74,7 +84,7 @@ namespace SistemaRestaurant
 
 
                 if (BD.tipo == "chef")
-                    sql = "UPDATE pedido SET estado = '1' + substring(estado, 2, len(estado)) WHERE id_pedido=" + ViewPedido.Rows[fila].Cells[0].Value.ToString() + ";";
+                    sql = "UPDATE pedido SET estado = '1' + substring(estado, 2, len(estado)) WHERE id=" + ViewPedido.Rows[fila].Cells[0].Value.ToString() + ";";
                 else
                     sql = "UPDATE pedido SET estado = substring(estado, 2, len(estado)) + '1' WHERE id=" + ViewPedido.Rows[fila].Cells[0].Value.ToString() + ";";
 
@@ -86,14 +96,6 @@ namespace SistemaRestaurant
                 command.Dispose();
                 RefreshTable();
             }
-        }
-        private void materialFlatButton1_Click(object sender, EventArgs e)
-        {
-            BD.cnn.Close();
-            this.Hide();
-            Form back = new menuChefBartender();
-            back.ShowDialog();
-            this.Close();
         }
     }
 }

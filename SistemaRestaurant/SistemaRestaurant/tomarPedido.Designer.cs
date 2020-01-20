@@ -104,6 +104,7 @@
             this.materialFlatButton3.TabIndex = 15;
             this.materialFlatButton3.Text = "Cancelar";
             this.materialFlatButton3.UseVisualStyleBackColor = true;
+            this.materialFlatButton3.Click += new System.EventHandler(this.materialFlatButton3_Click);
             // 
             // materialFlatButton2
             // 
@@ -119,6 +120,7 @@
             this.materialFlatButton2.TabIndex = 14;
             this.materialFlatButton2.Text = "Terminar Pedido";
             this.materialFlatButton2.UseVisualStyleBackColor = true;
+            this.materialFlatButton2.Click += new System.EventHandler(this.materialFlatButton2_Click_1);
             // 
             // materialFlatButton1
             // 
@@ -134,6 +136,7 @@
             this.materialFlatButton1.TabIndex = 13;
             this.materialFlatButton1.Text = "Regresar";
             this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click);
             // 
             // textBox1
             // 
@@ -158,6 +161,7 @@
             this.ViewBebida.Name = "ViewBebida";
             this.ViewBebida.Size = new System.Drawing.Size(427, 273);
             this.ViewBebida.TabIndex = 24;
+            this.ViewBebida.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ViewBebida_CellContentClick);
             // 
             // id1
             // 

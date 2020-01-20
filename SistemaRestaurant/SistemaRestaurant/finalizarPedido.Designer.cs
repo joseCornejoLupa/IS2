@@ -73,6 +73,7 @@
             this.ViewPedido.Name = "ViewPedido";
             this.ViewPedido.Size = new System.Drawing.Size(352, 272);
             this.ViewPedido.TabIndex = 23;
+            this.ViewPedido.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ViewPedido_CellContentClick);
             // 
             // idReserva
             // 
