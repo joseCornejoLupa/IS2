@@ -25,7 +25,7 @@ namespace SistemaRestaurant
         }
         private void gestionReserva_Load(object sender, EventArgs e)
         {
-
+            gestionarReservaDataGridView.AllowUserToAddRows = false;
         }
 
         private void QueryButton_Click_1(object sender, EventArgs e)

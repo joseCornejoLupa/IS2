@@ -24,7 +24,7 @@ namespace SistemaRestaurant
         {
             ViewComida.Rows.Clear();
             ViewBebida.Rows.Clear();
-            string sql = "select id, nombre,precio from comida";
+            string sql = "select id, nombre,precio from comida WHERE estado=1";
             SqlCommand command;
             SqlDataReader dataReader;
             command = new SqlCommand(sql, BD.cnn);
@@ -46,7 +46,7 @@ namespace SistemaRestaurant
 
 
             SqlDataReader dataReader1;
-            sql = "select id,nombre,precio from bebida";
+            sql = "select id,nombre,precio from bebida WHERE estado=1";
 
             command = new SqlCommand(sql, BD.cnn);
             dataReader1 = command.ExecuteReader();
@@ -187,7 +187,7 @@ namespace SistemaRestaurant
 
             codigoPedido = dataReader.GetValue(0).ToString();
             int codigoPedidoEnter = Convert.ToInt32(codigoPedido);
-            MessageBox.Show(codigoPedidoEnter.ToString());
+            //MessageBox.Show(codigoPedidoEnter.ToString());
             dataReader.Close();
 
             //asignandooo

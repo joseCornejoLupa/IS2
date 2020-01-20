@@ -22,6 +22,7 @@ namespace SistemaRestaurant
 
         private void emitirBoleta_Load(object sender, EventArgs e)
         {
+            dataGridView1.AllowUserToAddRows = false;
             BD.cnn.Open();
             SqlCommand command;
             String sql;

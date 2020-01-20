@@ -22,6 +22,7 @@ namespace SistemaRestaurant
 
         private void verReservas_Load(object sender, EventArgs e)
         {
+            gestionarReservaDataGridView.AllowUserToAddRows = false;
             gestionarReservaDataGridView.Rows.Clear();
             BD.cnn.Open();
             SqlCommand command;

@@ -22,6 +22,8 @@ namespace SistemaRestaurant
 
         private void gestionCarta_Load(object sender, EventArgs e)
         {
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView2.AllowUserToAddRows = false;
             BD.cnn.Open();
             SqlCommand command;
             String sql;
@@ -350,7 +352,7 @@ namespace SistemaRestaurant
                 command = new SqlCommand(sql, BD.cnn);
                 adapter.InsertCommand = new SqlCommand(sql, BD.cnn);
                 adapter.InsertCommand.ExecuteNonQuery();
-                MessageBox.Show("insertado");
+                MessageBox.Show("Insertado Correctamente");
             }
             else if (comboBox1.Text == "Bebida")
             {
