@@ -38,6 +38,8 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reservarButtons2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             ((System.ComponentModel.ISupportInitialize)(this.gestionarReservaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +64,7 @@
             this.QueryButton.AutoSize = true;
             this.QueryButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.QueryButton.Depth = 0;
-            this.QueryButton.Location = new System.Drawing.Point(703, 280);
+            this.QueryButton.Location = new System.Drawing.Point(638, 301);
             this.QueryButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.QueryButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.QueryButton.Name = "QueryButton";
@@ -92,9 +94,9 @@
             "20",
             "21",
             "22"});
-            this.hfComboBox.Location = new System.Drawing.Point(561, 243);
+            this.hfComboBox.Location = new System.Drawing.Point(638, 264);
             this.hfComboBox.Name = "hfComboBox";
-            this.hfComboBox.Size = new System.Drawing.Size(234, 28);
+            this.hfComboBox.Size = new System.Drawing.Size(79, 28);
             this.hfComboBox.TabIndex = 32;
             // 
             // hiComboBox
@@ -116,9 +118,9 @@
             "19",
             "20",
             "21"});
-            this.hiComboBox.Location = new System.Drawing.Point(561, 165);
+            this.hiComboBox.Location = new System.Drawing.Point(638, 186);
             this.hiComboBox.Name = "hiComboBox";
-            this.hiComboBox.Size = new System.Drawing.Size(234, 28);
+            this.hiComboBox.Size = new System.Drawing.Size(79, 28);
             this.hiComboBox.TabIndex = 31;
             // 
             // materialLabel4
@@ -127,7 +129,7 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(557, 208);
+            this.materialLabel4.Location = new System.Drawing.Point(634, 229);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(66, 19);
@@ -140,7 +142,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(557, 131);
+            this.materialLabel1.Location = new System.Drawing.Point(634, 152);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(83, 19);
@@ -179,11 +181,41 @@
             this.reservarButtons2.Name = "reservarButtons2";
             this.reservarButtons2.Text = "Reservar";
             // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(723, 268);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(29, 19);
+            this.materialLabel3.TabIndex = 38;
+            this.materialLabel3.Text = ":00";
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(723, 190);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(29, 19);
+            this.materialLabel2.TabIndex = 37;
+            this.materialLabel2.Text = ":00";
+            // 
             // gestionReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.materialLabel3);
+            this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.QueryButton);
             this.Controls.Add(this.hfComboBox);
@@ -212,5 +244,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewButtonColumn reservarButtons2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
     }
 }
