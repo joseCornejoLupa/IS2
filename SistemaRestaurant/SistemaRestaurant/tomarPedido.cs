@@ -22,25 +22,26 @@ namespace SistemaRestaurant
 
         public void RefreshTables()
         {
+            idReserva.Text = string.Empty;
             ViewComida.Rows.Clear();
             ViewBebida.Rows.Clear();
             string sql = "select id, nombre,precio from comida WHERE estado=1";
-            SqlCommand command;
-            SqlDataReader dataReader;
-            command = new SqlCommand(sql, BD.cnn);
-            dataReader = command.ExecuteReader();
+            SqlCommand command1;
+            SqlDataReader dataReaderK;
+            command1 = new SqlCommand(sql, BD.cnn);
+            dataReaderK = command1.ExecuteReader();
 
 
 
 
 
-            while (dataReader.Read())
+            while (dataReaderK.Read())
             {
                 //DataRow nuevo;
                 //ViewComida.NewRow();
-                ViewComida.Rows.Add(dataReader.GetValue(0), dataReader.GetValue(1), dataReader.GetValue(2));
+                ViewComida.Rows.Add(dataReaderK.GetValue(0), dataReaderK.GetValue(1), dataReaderK.GetValue(2));
             }
-            dataReader.Close();
+            dataReaderK.Close();
 
 
 
@@ -48,8 +49,8 @@ namespace SistemaRestaurant
             SqlDataReader dataReader1;
             sql = "select id,nombre,precio from bebida WHERE estado=1";
 
-            command = new SqlCommand(sql, BD.cnn);
-            dataReader1 = command.ExecuteReader();
+            command1 = new SqlCommand(sql, BD.cnn);
+            dataReader1 = command1.ExecuteReader();
 
 
             while (dataReader1.Read())
@@ -79,7 +80,24 @@ namespace SistemaRestaurant
             {
                 if (Convert.ToBoolean(row.Cells[3].Value) == true)
                 {
-                    arr.Add(Tuple.Create(row.Index, Convert.ToInt32(row.Cells[4].Value)));
+                    try
+                    {
+                        int valor = Convert.ToInt32(row.Cells[4].Value);
+                        if (valor < 1)
+                        {
+                            MessageBox.Show("Cantidad ingresada negativa, error");
+                            arr.Clear();
+                            RefreshTables();
+                        }
+                        arr.Add(Tuple.Create(row.Index, valor));
+                    }
+                    catch(FormatException)
+                    {
+                        MessageBox.Show("Ingrese un número válido en cantidad");
+                        arr.Clear();
+                        RefreshTables();
+                    }
+                   
 
                 }
             }
@@ -137,24 +155,37 @@ namespace SistemaRestaurant
         private void materialFlatButton2_Click_1(object sender, EventArgs e)
         {
             //verificando reserva
+
             string sql = "SELECT COUNT(*) FROM reserva WHERE id=" + idReserva.Text + "  and id_pedido is NULL;";
             SqlDataReader dataReader;
             SqlCommand command;
             command = new SqlCommand(sql, BD.cnn);
-
-            dataReader = command.ExecuteReader();
-
-            int cantidadReserva;
-            dataReader.Read();
-
-            cantidadReserva = Convert.ToInt32(dataReader.GetValue(0).ToString());
-            dataReader.Close();
-            if (cantidadReserva < 1)
+            int cantidadReserva=0;
+            try
             {
-                MessageBox.Show("El número de Reserva es inválido o ya tiene un pedido");
-                RefreshTables();
-                return;
+                dataReader = command.ExecuteReader();
+                dataReader.Read();
+                cantidadReserva = Convert.ToInt32(dataReader.GetValue(0).ToString());
+                dataReader.Close();
+                if (cantidadReserva < 1)
+                {
+                    MessageBox.Show("El número de Reserva es inválido o ya tiene un pedido");
+                    RefreshTables();
+                    return;
+                }
+                
             }
+            catch (System.Data.SqlClient.SqlException)
+            {
+                MessageBox.Show("Valores inválidos ingresados");
+            }
+
+            
+            
+
+            
+            
+            
 
             //int codigoPedidoEnter = Convert.ToInt32(cantidadReserva);
 
@@ -169,7 +200,7 @@ namespace SistemaRestaurant
 
             adapter.InsertCommand = new SqlCommand(sql, BD.cnn);
             adapter.InsertCommand.ExecuteNonQuery();
-
+            MessageBox.Show("Pedido Creado");
             //asignando reserva
 
 
@@ -193,11 +224,17 @@ namespace SistemaRestaurant
             //asignandooo
             sql = "UPDATE reserva SET id_pedido=" + codigoPedido + "WHERE id=" + idReserva.Text + ";";
 
-
-            command = new SqlCommand(sql, BD.cnn);
-            adapter.UpdateCommand = new SqlCommand(sql, BD.cnn);
-            adapter.UpdateCommand.ExecuteNonQuery();
-            command.Dispose();
+            try
+            {
+                command = new SqlCommand(sql, BD.cnn);
+                adapter.UpdateCommand = new SqlCommand(sql, BD.cnn);
+                adapter.UpdateCommand.ExecuteNonQuery();
+                command.Dispose();
+            }
+            catch(System.Data.SqlClient.SqlException)
+            {
+                MessageBox.Show("Valores de Código de Reserva inválido");
+            }
 
 
             //command.Dispose();
@@ -210,6 +247,16 @@ namespace SistemaRestaurant
 
             verificarChecks(ViewComida, ref comidas);
             verificarChecks(ViewBebida, ref bebidas);
+
+            bool isEmptyComida = !comidas.Any();
+            bool isEmptyBebida = !bebidas.Any();
+
+            if(isEmptyBebida || isEmptyComida)
+            {
+                RefreshTables();
+                dataReader.Close();
+                return;
+            }
 
             for (int i = 0; i < comidas.Count; i++)
             {
@@ -248,6 +295,7 @@ namespace SistemaRestaurant
             }
             dataReader.Close();
             RefreshTables();
+
 
         }
 
